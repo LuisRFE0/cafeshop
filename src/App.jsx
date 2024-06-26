@@ -1,12 +1,20 @@
 
 import '../src/style/app.css'
+import { InicioView } from './components/InicioView'
 import { Header } from './layout/Header'
+import { Administradores } from './data/Administradores'
+import { Footer } from './layout/Footer'
 
 export const App = () => {
+    const admin = Administradores();
+         
+
+
     return (
         <>
             <Header />
-            <h1 className='nombreTitulo'>COFFE SHOP</h1>
+            <InicioView  admin={admin} />
+            <Footer />
         </>)
 
 
