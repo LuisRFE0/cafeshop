@@ -10,7 +10,7 @@ export const PedidosInicio = () => {
 
         <>
 
-            <div className="container row text-center ">
+            <div className="container row  ">
                 <div className="col ">
 
                     <PedidosForm />

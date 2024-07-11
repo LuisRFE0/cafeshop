@@ -5,7 +5,7 @@ export const InicioView = ({ admin }) => {
         <>
            
            <div className="container">
-            <h1 className="text-center">Bienvenida {admin}</h1>
+            <h1 className="text-center">Bienvenido {admin}</h1>
            
         </div>
 

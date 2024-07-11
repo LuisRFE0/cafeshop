@@ -9,18 +9,8 @@ export const PedidosForm = () => {
 
             <form>
                 <Cuernitos />
-
-
+                <button type="submit" className="btn btn-primary mt-2">Registrar Orden</button>
             </form>
-
-            <div>
-
-            </div>
-
-            <div>
-                <Licuados />
-
-            </div>
 
         </>
 
