@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const Cuernitos = () => {
+export const Cuernitos = ({ handlerCuernitos }) => {
 
     const [cuernitoCheck, setCuernitoCheck] = useState({
         cuernito: false,
@@ -13,14 +13,18 @@ export const Cuernitos = () => {
         quesillo: false,
     });
 
-
-
     const handlerCheckCuernitos = (event) => {
 
         const { name, checked } = event.target;
         setCuernitoCheck({ ...cuernitoCheck, [name]: checked });
-        console.log(cuernitoCheck);
+
     }
+
+    const submitCuernitos = () => {
+        console.log('desde el submit cuernos');
+        handlerCuernitos(cuernitoCheck);
+    }
+
     return (
         <>
             <div className="form-check">
@@ -55,8 +59,8 @@ export const Cuernitos = () => {
                 <input type="checkbox" className="form-check-input" id="quesill" name="quesillo" checked={cuernitoCheck.quesillo} onChange={handlerCheckCuernitos} />
                 <label htmlFor="quesill" className="form-check-label">Quesillo</label>
             </div>
+            <button type="button" className="btn btn-primary mt-2" onClick={submitCuernitos}>Registrar Orden</button>
 
-           
 
 
         </>
