@@ -4,6 +4,7 @@ export const Cuernitos = ({ handlerCuernitos }) => {
 
     const [cuernitoCheck, setCuernitoCheck] = useState({
         cuernito: false,
+        sandwich:false,
         mayonesa: false,
         cebolla: false,
         jitomate: false,
@@ -30,6 +31,11 @@ export const Cuernitos = ({ handlerCuernitos }) => {
             <div className="form-check">
                 <input type="checkbox" id="cuerno" className="form-check-input" name="cuernito" checked={cuernitoCheck.cuernito} onChange={handlerCheckCuernitos} />
                 <label htmlFor="cuerno" className="form-check-label">Cuernito</label>
+            </div>
+    
+            <div className="form-check">
+                <input type="checkbox" id="sandwich" className="form-check-input" name="sandwich" checked={cuernitoCheck.sandwich} onChange={handlerCheckCuernitos} />
+                <label htmlFor="sandwich" className="form-check-label">Sandwich</label>
             </div>
             <div className="form-check">
                 <input type="checkbox" className="form-check-input" id="mayo" name="mayonesa" checked={cuernitoCheck.mayonesa} onChange={handlerCheckCuernitos} />
@@ -59,7 +65,7 @@ export const Cuernitos = ({ handlerCuernitos }) => {
                 <input type="checkbox" className="form-check-input" id="quesill" name="quesillo" checked={cuernitoCheck.quesillo} onChange={handlerCheckCuernitos} />
                 <label htmlFor="quesill" className="form-check-label">Quesillo</label>
             </div>
-            <button type="button" className="btn btn-primary mt-2" onClick={submitCuernitos}>Registrar Orden</button>
+            <button type="button" className="btn btn-primary m-2" onClick={submitCuernitos}>Registrar Orden</button>
 
 
 

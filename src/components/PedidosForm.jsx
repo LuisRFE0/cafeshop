@@ -23,7 +23,7 @@ export const PedidosForm = () => {
         <>
             <form>
                 <Cuernitos handlerCuernitos={handlerCuernitos} />
-                <button type="button" className="btn btn-primary mt-2" onClick={mostrar}>mostrar states</button>
+                <button type="button" className="btn btn-success m-2" onClick={mostrar}>mostrar states</button>
 
             </form>
 
