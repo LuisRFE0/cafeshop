@@ -65,7 +65,7 @@ export const Cuernitos = ({ handlerCuernitos }) => {
                 <input type="checkbox" className="form-check-input" id="quesill" name="quesillo" checked={cuernitoCheck.quesillo} onChange={handlerCheckCuernitos} />
                 <label htmlFor="quesill" className="form-check-label">Quesillo</label>
             </div>
-            <button type="button" className="btn btn-primary m-2" onClick={submitCuernitos}>Registrar Orden</button>
+            <button type="button" className="btn btn-primary m-2" onClick={submitCuernitos}>Agregar</button>
 
 
 
